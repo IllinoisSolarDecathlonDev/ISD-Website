@@ -1,5 +1,5 @@
 const leadershipMembers = [
-  { name: "Eshana Jain", role: "President", image: "/images/team/leadership/eshanajain.jpg" },
+  { name: "Benny Winer", role: "President", image: "/images/team/leadership/benny-winer.jpg" },
   { name: "Aarya Patel", role: "Vice President", image: "/images/team/leadership/aarya-patel.jpg" },
   { name: "Adrika Vats", role: "Sponsorship Coordinator", image: "/images/team/leadership/adrika-vats.jpg" },
   { name: "Amrit Agarwal", role: "Treasurer", image: "/images/team/leadership/amrit-agarwal.jpg" },
