@@ -69,7 +69,7 @@ export default function LeadershipPage() {
         <section className="advisors-section">
           <h2 className="advisors-title">Faculty Advisors</h2>
           <p className="advisors-subtitle">
-            Faculty and industry advisors who ground our projects in real-world practice.
+            Faculty and industry advisors who ground our projects in real-world practices.
           </p>
           <div className="advisors-grid">
             {facultyAdvisors.map((advisor) => (
