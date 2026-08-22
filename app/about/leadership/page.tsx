@@ -37,7 +37,7 @@ export default function LeadershipPage() {
 
       <div className="team-page-content">
         <section className="leadership-intro">
-          <p className="team-year-title">2025–2026 Executive Board</p>
+          <p className="team-year-title">2026–2027 Executive Board</p>
           <p className="team-description leadership-description">
             ISD is led by a student executive board working closely with faculty and
             industry advisors. Leadership roles mirror a professional design-build
