@@ -1,7 +1,7 @@
 const leadershipMembers = [
   { name: "Benny Winer", role: "President", image: "/images/team/leadership/benny-winer.jpg" },
   { name: "Jamane Tong", role: "Vice President", image: "/images/team/leadership/jamane-tong.jpg" },
-  { name: "Agnes Tamatekou", role: "Treasurer", image: "/images/team/leadership/anonpfp.jpg" },
+  { name: "Agnes Tamatekou", role: "Treasurer", image: "/images/team/leadership/agnes-tamatekou.jpg" },
   { name: "Saarthak Jain", role: "Sponsorship Coordinator", image: "/images/team/leadership/anonpf.png" },
   { name: "Emma Zheng", role: "Communications Director", image: "/images/team/leadership/anonpfp.jpg" },
   { name: "Annika Lao", role: "Marketing Director", image: "/images/team/leadership/anonpfp.jpg" },
