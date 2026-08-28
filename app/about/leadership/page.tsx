@@ -5,7 +5,7 @@ const leadershipMembers = [
   { name: "Saarthak Jain", role: "Sponsorship Coordinator", image: "/images/team/leadership/anonpf.png" },
   { name: "Emma Zheng", role: "Communications Director", image: "/images/team/leadership/anonpfp.jpg" },
   { name: "Annika Lao", role: "Marketing Director", image: "/images/team/leadership/anonpfp.jpg" },
-  { name: "Xavier Lindsey", role: "Membership Director", image: "/images/team/leadership/anonpfp.jpg" },
+  { name: "Xavier Lindsey", role: "Membership Director", image: "/images/team/leadership/ xavier-lindsey.jpg" },
 ];
 
 const facultyAdvisors = [
