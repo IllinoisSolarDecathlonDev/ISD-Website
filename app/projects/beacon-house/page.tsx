@@ -62,7 +62,7 @@ const GALLERY_IMAGES = [
 function BeaconGallery() {
   const [index, setIndex] = useState(0);
 
-  const goTo = (i) => {
+  const goTo = (i: number) => {
     const next = (i + GALLERY_IMAGES.length) % GALLERY_IMAGES.length;
     setIndex(next);
   };
