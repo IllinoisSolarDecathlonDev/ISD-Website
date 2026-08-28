@@ -120,6 +120,8 @@ function BeaconGallery() {
       <style jsx>{`
         .project-carousel {
           width: 100%;
+          max-width: 900px;
+          margin: 0 auto;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -128,14 +130,15 @@ function BeaconGallery() {
           width: 100%;
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 1.25rem;
         }
         .project-carousel-image-wrapper {
           flex: 1;
-          border-radius: 1rem;
+          border-radius: 1.25rem;
           overflow: hidden;
-          box-shadow: 0 4px 28px 0 #0001;
-          aspect-ratio: 4 / 3;
+          box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          aspect-ratio: 3 / 2;
         }
         .project-carousel-image {
           width: 100%;
@@ -154,35 +157,50 @@ function BeaconGallery() {
         }
         .project-carousel-arrow {
           flex-shrink: 0;
-          width: 2.25rem;
-          height: 2.25rem;
+          width: 3rem;
+          height: 3rem;
           border-radius: 999px;
           border: none;
-          background: rgba(0, 0, 0, 0.06);
-          font-size: 1.25rem;
+          background: rgba(15, 23, 42, 0.06);
+          color: var(--text-primary, #0f172a);
+          font-size: 1.5rem;
           line-height: 1;
           cursor: pointer;
-          transition: background 0.2s ease;
+          transition: background 0.2s ease, transform 0.2s ease;
         }
         .project-carousel-arrow:hover {
-          background: rgba(0, 0, 0, 0.12);
+          background: rgba(15, 23, 42, 0.12);
+          transform: translateY(-1px);
         }
         .project-carousel-dots {
           display: flex;
-          gap: 0.4rem;
-          margin-top: 0.6rem;
+          gap: 0.5rem;
+          margin-top: 1rem;
         }
         .project-carousel-dot {
-          width: 0.5rem;
-          height: 0.5rem;
+          width: 0.55rem;
+          height: 0.55rem;
           border-radius: 999px;
           border: none;
           background: rgba(0, 0, 0, 0.15);
           cursor: pointer;
           padding: 0;
+          transition: background 0.2s ease, transform 0.2s ease;
         }
         .project-carousel-dot-active {
-          background: rgba(0, 0, 0, 0.55);
+          background: #059669;
+          transform: scale(1.2);
+        }
+
+        @media (max-width: 640px) {
+          .project-carousel-frame {
+            gap: 0.5rem;
+          }
+          .project-carousel-arrow {
+            width: 2.25rem;
+            height: 2.25rem;
+            font-size: 1.15rem;
+          }
         }
       `}</style>
     </div>
@@ -215,7 +233,7 @@ export default function BeaconHousePage() {
               Building Energy-Efficient Affordable Community-Oriented Neighborhoods. A completed initiative bringing direct community implementation to Rantoul, Illinois.
             </p>
             <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-complete">Complete</span>
+              <span className="project-status-badge project-status-badge-completed">Completed 2026</span>
               <span className="project-stat">1,700+ sq ft</span>
               <span className="project-stat">All-Electric</span>
             </div>
@@ -241,8 +259,8 @@ export default function BeaconHousePage() {
         </section>
 
         {/* Development & Construction */}
-        <section className="project-glass-section project-glass-grid-2">
-          <div className="project-glass-card">
+        <section className="project-glass-section">
+          <div className="project-glass-card project-glass-card-large">
             <div className="project-glass-content">
               <h2 className="project-glass-title">Development & Construction</h2>
               <p className="project-glass-body">
@@ -253,36 +271,33 @@ export default function BeaconHousePage() {
               </p>
             </div>
           </div>
+        </section>
 
-          <div className="project-glass-card project-glass-image-card">
-            <div
-              className="project-glass-image-figure"
-              style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center" }}
-            >
-              <BeaconGallery />
-            </div>
+        {/* Photo Gallery */}
+        <section className="project-glass-section">
+          <div className="beacon-gallery-section">
+            <h2 className="project-glass-title beacon-gallery-title">Photo Gallery</h2>
+            <BeaconGallery />
           </div>
         </section>
 
         {/* Performance & Impact */}
-        <section className="project-glass-section project-glass-grid-2">
-          <div className="project-glass-card project-glass-image-card">
-            <div className="project-glass-image-figure" style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <img
-                src="/images/projects/beacon-house/beacon6.png"
-                alt="Performance Dashboard Preview for BEACON Home"
-                style={{ width: "100%", maxWidth: "540px", borderRadius: "1rem", boxShadow: "0 4px 28px 0 #0001", marginBottom: "0.5rem" }}
-              />
-              <span className="project-glass-image-caption">Performance Dashboard</span>
-            </div>
-          </div>
-          <div className="project-glass-card">
+        <section className="project-glass-section">
+          <div className="project-glass-card project-glass-card-large">
             <div className="project-glass-content">
               <h2 className="project-glass-title">Performance & Livability</h2>
               <p className="project-glass-body">
                 The design prioritizes durability, resilience, integrated building performance, indoor environmental quality, and occupant comfort. A specialized performance dashboard enables residents to monitor their energy production and consumption in real time.
               </p>
             </div>
+          </div>
+          <div className="beacon-dashboard-figure">
+            <img
+              src="/images/projects/beacon-house/beacon6.png"
+              alt="Performance Dashboard Preview for BEACON Home"
+              className="beacon-dashboard-image"
+            />
+            <span className="project-glass-image-caption">Performance Dashboard</span>
           </div>
         </section>
 
@@ -297,7 +312,3 @@ export default function BeaconHousePage() {
             </div>
           </div>
         </section>
-      </div>
-    </div>
-  );
-}
