@@ -312,3 +312,34 @@ export default function BeaconHousePage() {
             </div>
           </div>
         </section>
+      </div>
+
+      <style jsx>{`
+        .beacon-gallery-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          width: 100%;
+        }
+        .beacon-gallery-title {
+          text-align: center;
+        }
+        .beacon-dashboard-figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1.5rem;
+        }
+        .beacon-dashboard-image {
+          width: 100%;
+          max-width: 540px;
+          height: auto;
+          border-radius: 1rem;
+          box-shadow: 0 4px 28px 0 #0001;
+          margin-bottom: 0.5rem;
+        }
+      `}</style>
+    </div>
+  );
+}

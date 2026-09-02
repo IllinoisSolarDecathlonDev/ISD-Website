@@ -16,7 +16,7 @@ const VISION_IMAGES = [
   "/images/vision-carousel/idealsein.png",
   "/images/vision-carousel/idealsout.png",
   "/images/vision-carousel/idealsatriu.png",
-  "/images/vision-carousel/gabeone.png",
+  "/images/vision-carousel/gabone.png",
 ];
 
 const AUTOPLAY_MS = 5000;
