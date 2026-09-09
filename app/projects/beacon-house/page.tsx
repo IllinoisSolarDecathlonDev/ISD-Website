@@ -8,7 +8,7 @@ import Image from "next/image";
 // and update the src + caption below. Order = carousel order.
 const GALLERY_IMAGES = [
   {
-    src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20704.jpg",
+    src: "/images/projects/beacon-house/main.jpg",
     alt: "BEACON Home event photo",
     caption: "BEACON Home",
   },
