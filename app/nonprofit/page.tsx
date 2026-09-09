@@ -32,8 +32,8 @@ export default function NonprofitPage() {
           <p>
             The board of Build Solar is made up of UIUC Alumni and members of
             Illinois Solar Decathlon. With the help of Build Solar, Illinois Solar
-            Decathlon was able to sign a contract with Nelson Builders and finance
-            the construction of the home.
+            Decathlon was able to sign a contract with Nelson Builders and Broeren 
+            Russo Builders Inc. to finance the construction of the home.
           </p>
         </div>
       </section>
