@@ -97,6 +97,18 @@ export default function HomePage() {
       </section>
 
       <div className="home-inner">
+                <section className="beacon-banner-section scroll-animate fade-up">
+          <Image
+            src="/images/cover.jpg"
+            alt="Together, We Built BEACON — the BEACON Home is officially complete, thank you to our sponsors and partners"
+            width={1920}
+            height={825}
+            className="beacon-banner-image"
+            style={{ width: "100%", height: "auto", display: "block" }}
+            sizes="100vw"
+          />
+        </section>
+        
         <section className="competition-section scroll-animate fade-up">
           <div className="competition-grid">
             <div className="competition-panel">
