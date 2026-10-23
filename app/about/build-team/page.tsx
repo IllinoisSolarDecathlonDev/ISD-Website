@@ -12,7 +12,7 @@ const teamMembers: TeamMember[] = [
 
 const leadership = {
   name: "Etienne Sirois",
-  role: "2025-2026 Build Lead",
+  role: "2026-2027 Build Lead",
   image: "/images/team/build/etienne-sirois.jpg",
 };
 
