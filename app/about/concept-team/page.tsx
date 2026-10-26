@@ -14,7 +14,7 @@ const teamMembers: ConceptTeamMember[] = [
 
 const leadership = {
   name: "Hitesh Karane",
-  role: "2025-2026 Project Manager",
+  role: "2026-2027 Project Manager",
   image: "/images/team/concept/hitesh-karane.jpg",
 };
 
@@ -31,7 +31,7 @@ export default function ConceptTeamPage() {
           <div className="team-group-photo">
             <Image
               src="/images/team/concept/group-2025-2026.jpg"
-              alt="2025–2026 Concept Team"
+              alt="2026–2027 Concept Team"
               width={600}
               height={400}
               className="group-image"
@@ -41,7 +41,7 @@ export default function ConceptTeamPage() {
             <p className="team-intro-kicker">About the Concept Team</p>
             <h2 className="team-intro-heading">Exploring future-ready, sustainable homes</h2>
             <p className="team-description">
-              Our 2025–2026 Concept Team is made up mostly of first- and second-year students
+              Our 2026–2027 Concept Team is made up mostly of first- and second-year students
               who dive into sustainable building technologies, systems research, and digital
               modeling. They learn tools like Revit that prepare them for future years on ISD.
             </p>

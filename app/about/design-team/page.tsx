@@ -12,7 +12,7 @@ const teamMembers: DesignTeamMember[] = [
 
 const leadership = {
   name: "Afrin Khoury",
-  role: "2025-2026 Design Lead",
+  role: "2026-2027 Design Lead",
   image: "/images/team/design/afrin-khoury.jpg",
 };
 
@@ -29,7 +29,7 @@ export default function DesignTeamPage() {
           <div className="team-group-photo">
             <Image
               src="/images/team/design/group-2025-2026.jpg"
-              alt="2025–2026 Design Team"
+              alt="2026–2027 Design Team"
               width={600}
               height={400}
               className="group-image"
@@ -44,7 +44,7 @@ export default function DesignTeamPage() {
               comfort, and aesthetics.
             </p>
             <p className="team-description">
-              Our 2025–2026 Design Team is competing in the 2025 DOE Design Challenge with
+              Our 2026–2027 Design Team is competing in the 2025 DOE Design Challenge with
               a multifamily project that responds to the housing crisis in Chicago. The team
               is developing preliminary schemes and researching innovative retrofit strategies
               to meet ambitious energy and resilience targets.
