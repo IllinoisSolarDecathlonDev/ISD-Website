@@ -29,7 +29,7 @@ export default function BuildTeamPage() {
           <div className="team-group-photo">
             <Image
               src="/images/team/build/group-2025-2026.jpg"
-              alt="2025–2026 Build Team"
+              alt="2026–2027 Build Team"
               width={600}
               height={400}
               className="group-image"
@@ -44,7 +44,7 @@ export default function BuildTeamPage() {
               gap between design intent and reality.
             </p>
             <p className="team-description">
-              Our 2025–2026 Build Team is designing a new net‑zero home in Rantoul, IL.
+              Our 2026–2027 Build Team is designing a new net‑zero home in Rantoul, IL.
               After purchasing the site and completing multiple site analyses, the team is
               finalizing drawings with company partners and aiming to break ground this
               winter—creating a repeatable model for affordable, net‑zero housing in
