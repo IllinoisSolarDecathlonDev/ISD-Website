@@ -35,11 +35,13 @@ export default function BuildTeamPage() {
               gap between design intent and reality.
             </p>
             <p className="team-description">
-              Our 2026–2027 Build Team has just completed the new net‑zero home <Link href="/projects/beacon-house">BEACON</Link> in
-              Rantoul, IL. After purchasing the site, completing multiple site analyses and
-              designs, and collaborating with company partners, BEACON is fully constructed
-              and ready for a family to reside in — the first of many affordable, net‑zero
-              housing designs for suburban and rural communities.
+              Our 2026–2027 Build Team has just completed{" "}
+              <Link href="/projects/beacon-house">BEACON</Link>, a new net‑zero home in
+              Rantoul, IL. After the team ran multiple site analyses, refined the design
+              alongside company partners, and monitored the construction process, the home is
+              ready for a family to reside in. <Link href="/projects/beacon-house">BEACON</Link> is the
+              first of many affordable, net‑zero home designs for suburban and rural
+              communities.
             </p>
           </div>
         </section>
