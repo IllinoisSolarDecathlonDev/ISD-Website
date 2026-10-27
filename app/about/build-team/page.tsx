@@ -1,19 +1,10 @@
 import Image from "next/image";
-
-type TeamMember = {
-  name: string;
-  image: string;
-};
-
-const teamMembers: TeamMember[] = [
-  // Add team members here, e.g.:
-  // { name: "Member Name", image: "/images/team/build/member-name.jpg" },
-];
+import Link from "next/link";
 
 const leadership = {
-  name: "Etienne Sirois",
+  name: "Amrit Agarwal",
   role: "2026-2027 Build Lead",
-  image: "/images/team/build/etienne-sirois.jpg",
+  image: "/images/team/build/Build_lead_26-27.jpg",
 };
 
 export default function BuildTeamPage() {
@@ -28,7 +19,7 @@ export default function BuildTeamPage() {
         <section className="team-intro">
           <div className="team-group-photo">
             <Image
-              src="/images/team/build/group-2025-2026.jpg"
+              src="/images/team/build/Build_team_26-27.jpg"
               alt="2026–2027 Build Team"
               width={600}
               height={400}
@@ -44,11 +35,11 @@ export default function BuildTeamPage() {
               gap between design intent and reality.
             </p>
             <p className="team-description">
-              Our 2026–2027 Build Team is designing a new net‑zero home in Rantoul, IL.
-              After purchasing the site and completing multiple site analyses, the team is
-              finalizing drawings with company partners and aiming to break ground this
-              winter—creating a repeatable model for affordable, net‑zero housing in
-              suburban and rural communities.
+              Our 2026–2027 Build Team has just completed the new net‑zero home <Link href="/projects/beacon-house">BEACON</Link> in
+              Rantoul, IL. After purchasing the site, completing multiple site analyses and
+              designs, and collaborating with company partners, BEACON is fully constructed
+              and ready for a family to reside in — the first of many affordable, net‑zero
+              housing designs for suburban and rural communities.
             </p>
           </div>
         </section>

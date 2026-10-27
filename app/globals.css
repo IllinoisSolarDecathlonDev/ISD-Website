@@ -3126,6 +3126,12 @@ body.navbar-animated .app-main > .hero-full:first-child {
   margin: 0;
 }
 
+.team-description a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .team-divider {
   height: 1px;
   background-color: var(--border-subtle);
