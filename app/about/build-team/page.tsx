@@ -17,7 +17,7 @@ export default function BuildTeamPage() {
 
       <div className="team-page-content">
         <section className="team-intro">
-          <div className="team-group-photo">
+          <div className="team-group-photo team-group-photo--wide">
             <Image
               src="/images/team/build/Build_team_26-27.jpg"
               alt="2026–2027 Build Team"
