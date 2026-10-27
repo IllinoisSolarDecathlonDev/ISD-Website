@@ -3080,6 +3080,13 @@ body.navbar-animated .app-main > .hero-full:first-child {
   border-radius: 0.75rem;
 }
 
+/* Matches the 3:2 photo so no one at the edges is cropped out, and
+   centers the shorter frame vertically against the intro text */
+.team-group-photo--wide {
+  aspect-ratio: 3/2;
+  align-self: center;
+}
+
 .group-image {
   width: 100%;
   height: 100%;
@@ -3124,6 +3131,12 @@ body.navbar-animated .app-main > .hero-full:first-child {
   line-height: 1.7;
   color: var(--text-secondary);
   margin: 0;
+}
+
+.team-description a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .team-divider {
