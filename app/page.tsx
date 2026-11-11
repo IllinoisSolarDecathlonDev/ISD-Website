@@ -6,6 +6,10 @@ import { useEffect, useState } from "react";
 import { VisionCarousel } from "../components/VisionCarousel";
 import { GoogleCalendar } from "../components/GoogleCalendar";
 
+// Public ISD Google Calendar shown in the "Upcoming Events" section.
+const ISD_CALENDAR_ID =
+  "c_ee4f58ed97633523e970298ad699a46d6fcc2fa7073705f98af89f1f170ca8f5@group.calendar.google.com";
+
 export default function HomePage() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -292,7 +296,7 @@ export default function HomePage() {
                         <Link href="/projects/beacon-house" className="homes-timeline-card">
                           <div className="homes-timeline-image-wrapper">
                             <Image
-                              src="/images/homes/beacon.png"
+                              src="/images/homes/beacon-house.jpg"
                               alt="BEACON Home"
                               fill
                               className="homes-timeline-image"
@@ -330,7 +334,7 @@ export default function HomePage() {
 
         <section className="calendar-section-wrapper scroll-animate fade-up">
           <GoogleCalendar 
-            calendarId={process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_ID}
+            calendarId={process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_ID || ISD_CALENDAR_ID}
             apiKey={process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
             showTitle={true}
           />
@@ -339,13 +343,11 @@ export default function HomePage() {
         <footer
           className="social-footer scroll-animate fade-up"
           style={{
-            background: "linear-gradient(90deg, #FF7518 0%, #FFAD42 100%)",
+            background: "#F7941E",
             color: "#fff",
           }}
         >
-          <p className="social-footer-label" style={{ color: "#fff", fontWeight: "bold" }}>
-            Connect with us!
-          </p>
+          <h2 className="social-footer-label">Connect with us!</h2>
           <div className="social-link-row">
             <Link
               href="https://linktr.ee/illinoissolardecathlon"

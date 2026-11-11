@@ -9,14 +9,12 @@ import { useEffect, useState } from "react";
  * Example: 1.jpg, 2.jpg, 3.jpg ... or team-build.jpg, solar-house.jpg, etc.
  */
 const VISION_IMAGES = [
-  "/images/vision-carousel/beacon-start.png",
+  "/images/vision-carousel/beacon-complete.jpg",
+  "/images/vision-carousel/beacon-team.jpg",
   "/images/vision-carousel/gabcarous.png",
   "/images/vision-carousel/recarous.png",
-  "/images/vision-carousel/gabe.png",
-  "/images/vision-carousel/idealsein.png",
-  "/images/vision-carousel/idealsout.png",
-  "/images/vision-carousel/idealsatriu.png",
   "/images/vision-carousel/gabone.png",
+  "/images/vision-carousel/idealsatriu.png",
 ];
 
 const AUTOPLAY_MS = 5000;
