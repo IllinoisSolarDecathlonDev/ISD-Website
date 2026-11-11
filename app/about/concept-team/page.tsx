@@ -27,16 +27,16 @@ export default function ConceptTeamPage() {
           </div>
           <div className="team-intro-text">
             <p className="team-intro-kicker">About the Concept Team</p>
-            <h2 className="team-intro-heading">Exploring future-ready, sustainable buildings</h2>
+            <h2 className="team-intro-heading">Exploring future-ready, sustainable homes</h2>
             <p className="team-description">
               Our 2026–2027 Concept Team is made up mostly of first- and second-year students
               who dive into sustainable building technologies, systems research, and digital
               modeling. They learn tools like Revit that prepare them for future years on ISD.
             </p>
             <p className="team-description">
-              This year, the team is designing the retrofit of a hotel in Taiwan, weaving
-              sustainable design and engineering principles into every decision—from building
-              envelope strategies to mechanical systems and occupant comfort.
+              This year, the team has an internal competition to design a sustainable
+              single-family home, weaving innovation and engineering principles into every
+              decision.
             </p>
           </div>
         </section>
