@@ -13,7 +13,7 @@ const ABOUT_IMAGES = [
 const ABOUT_STATS = [
   { value: 150, suffix: "+", label: "Active members" },
   { value: 15, suffix: "+", label: "Majors represented" },
-  { value: 3, suffix: "–4", label: "Competition projects per cycle" },
+  { value: 6, suffix: "", label: "Houses built and counting" },
 ];
 
 export default function AboutPage() {
