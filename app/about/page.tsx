@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CountUpStats } from "../../components/CountUpStats";
 
 const ABOUT_IMAGES = [
@@ -10,7 +11,7 @@ const ABOUT_IMAGES = [
 ];
 
 const ABOUT_STATS = [
-  { value: 120, suffix: "+", label: "Active members" },
+  { value: 150, suffix: "+", label: "Active members" },
   { value: 15, suffix: "+", label: "Majors represented" },
   { value: 3, suffix: "–4", label: "Competition projects per cycle" },
 ];
@@ -33,10 +34,12 @@ export default function AboutPage() {
             <h2 className="about-heading">Who we are</h2>
             <p className="about-body">
               Illinois Solar Decathlon is an interdisciplinary registered student
-              organization with over 100 undergraduate and graduate students at the
-              University of Illinois at Urbana-Champaign. We compete in the
-              international, Department of Energy-sponsored Solar Decathlon Build and
-              Solar Decathlon Design competitions. Illinois Solar Decathlon is
+              organization with over 150 undergraduate and graduate students at the
+              University of Illinois at Urbana-Champaign. We{" "}
+              <Link href="/about/build-team">build</Link> real clean-energy
+              suburban homes and compete in global competitions to tackle
+              sustainable <Link href="/about/design-team">design</Link>{" "}
+              challenges. Illinois Solar Decathlon is
               comprised of an executive board, a build competition team, a design
               competition team, and a concept team, which fosters skills and
               knowledge development for younger organization members.
@@ -50,10 +53,9 @@ export default function AboutPage() {
               Decathlon Build competition, a challenge open to teams from universities
               from around the world where students design and build full-size
               solar-powered homes with support from professional sponsors. Since our
-              impetus, we have built a total of five homes, one of which achieved
-              second place, and competed in several design competitions. Our 2024
-              Design team are now finalist in the DOE Design Challenge and is
-              polishing IDEALS for the final competition.
+              impetus, we have built a total of six homes, each one award-winning
+              and fully-functioning. Our 2026 Design team is now preparing for the
+              2027 Setty Family Foundation Net Zero Energy Design Competition.
             </p>
           </section>
 
@@ -107,9 +109,15 @@ export default function AboutPage() {
         <div className="about-note">
           <span className="about-badge">Subteams</span>
           <ul className="about-list">
-            <li>Build Team</li>
-            <li>Design Team</li>
-            <li>Concept Team</li>
+            <li>
+              <Link href="/about/build-team">Build Team</Link>
+            </li>
+            <li>
+              <Link href="/about/design-team">Design Team</Link>
+            </li>
+            <li>
+              <Link href="/about/concept-team">Concept Team</Link>
+            </li>
           </ul>
         </div>
       </div>

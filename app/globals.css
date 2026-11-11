@@ -3133,6 +3133,8 @@ body.navbar-animated .app-main > .hero-full:first-child {
   margin: 0;
 }
 
+.about-body a,
+.about-list a,
 .team-description a {
   font-weight: 600;
   text-decoration: underline;
