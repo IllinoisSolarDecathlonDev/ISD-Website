@@ -8,6 +8,41 @@ import { ProjectHero } from "@/components/ProjectHero";
 // and update the src + caption below. Order = carousel order.
 const GALLERY_IMAGES = [
   {
+    src: "/images/homes/beacon-house.jpg",
+    alt: "Completed BEACON Home exterior in Rantoul, Illinois",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/vision-carousel/beacon-team.jpg",
+    alt: "ISD team and partners in front of the BEACON Home sign and the finished house",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-solar-roof.jpg",
+    alt: "Solar panels on the BEACON Home's black metal roof",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-family-welcome.jpg",
+    alt: "ISD team member welcoming a family into the BEACON Home",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-kitchen-tour.jpg",
+    alt: "Students touring the BEACON Home kitchen",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-heat-pump-tour.jpg",
+    alt: "Team members by the BEACON Home's heat pump and electrical equipment",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-sign-in.jpg",
+    alt: "Visitor signing in at the BEACON Home event",
+    caption: "BEACON Home",
+  },
+  {
     src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20821.jpg",
     alt: "BEACON Home team in hard hats in front of the project sign",
     caption: "BEACON Home",
