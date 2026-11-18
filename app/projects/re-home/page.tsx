@@ -7,8 +7,9 @@ export default function ReHomePage() {
       <ProjectHero
         title="Re_Home"
         lead="Our 2011 Solar Decathlon entry. A rapidly deployable, disaster-responsive modular housing prototype designed for the Midwest."
-        imageSrc="/images/homes/re-home.jpg"
-        imageAlt="Re_Home exterior"
+        imageSrc="/images/vision-carousel/recarous.png"
+        imageAlt="Visitors touring the Re_Home exhibit and its solar-panel roof"
+        imagePosition="40% center"
         status={{ label: "Completed 2011", variant: "completed" }}
         stats={["Rapid Deployment", "7.7 kW PV Array"]}
       />

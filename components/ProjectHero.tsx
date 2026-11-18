@@ -48,7 +48,11 @@ export function ProjectHero({
           alt={imageAlt}
           fill
           priority
-          sizes="(max-width: 899px) 100vw, 50vw"
+          // Next.js defaults to 75; the hero is the page's main image, so compress it less.
+          quality={90}
+          // The frame is taller than a typical 3:2 photo, so object-fit: cover scales the
+          // photo wider than the frame. Request enough pixels for that, not just the frame width.
+          sizes="(max-width: 899px) 115vw, 75vw"
           style={{ objectFit: "cover", objectPosition: imagePosition }}
         />
       </div>

@@ -214,8 +214,8 @@ export default function BeaconHousePage() {
       <ProjectHero
         title="BEACON Home"
         lead="Building Energy-Efficient Affordable Community-Oriented Neighborhoods. A completed initiative bringing direct community implementation to Rantoul, Illinois."
-        imageSrc="/images/homes/beacon.png"
-        imageAlt="BEACON Home exterior render"
+        imageSrc="/images/homes/beacon-house.jpg"
+        imageAlt="Completed BEACON Home exterior in Rantoul, Illinois"
         status={{ label: "Completed 2026", variant: "completed" }}
         stats={["1,700+ sq ft", "All-Electric"]}
       />
