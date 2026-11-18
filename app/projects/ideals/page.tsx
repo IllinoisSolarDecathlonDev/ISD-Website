@@ -1,4 +1,5 @@
 import { ProjectHero } from "@/components/ProjectHero";
+import { ProjectVideo } from "@/components/ProjectVideo";
 
 export default function IdealsPage() {
   return (
@@ -15,6 +16,9 @@ export default function IdealsPage() {
 
       {/* Main Content */}
       <div className="project-futuristic-main">
+        {/* Project Video */}
+        <ProjectVideo youtubeId="8sKk7Z28SLo" title="IDEALS Design Challenge 2024 Submissions" />
+
         {/* Social & Environmental Justice */}
         <section className="project-glass-section">
           <div className="project-glass-card project-glass-card-large">
