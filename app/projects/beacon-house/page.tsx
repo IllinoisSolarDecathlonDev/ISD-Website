@@ -8,8 +8,8 @@ import { ProjectHero } from "@/components/ProjectHero";
 // and update the src + caption below. Order = carousel order.
 const GALLERY_IMAGES = [
   {
-    src: "/images/projects/beacon-house/main.jpg",
-    alt: "BEACON Home event photo",
+    src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20821.jpg",
+    alt: "BEACON Home team in hard hats in front of the project sign",
     caption: "BEACON Home",
   },
   {
@@ -39,16 +39,6 @@ const GALLERY_IMAGES = [
   },
   {
     src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20805.jpg",
-    alt: "BEACON Home event photo",
-    caption: "BEACON Home",
-  },
-  {
-    src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20813.jpg",
-    alt: "BEACON Home event photo",
-    caption: "BEACON Home",
-  },
-  {
-    src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20821.jpg",
     alt: "BEACON Home event photo",
     caption: "BEACON Home",
   },
