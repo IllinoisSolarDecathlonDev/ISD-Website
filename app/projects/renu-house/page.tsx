@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
 import { ProjectImageCarousel } from "@/components/ProjectImageCarousel";
 import {
   RENU_CAROUSEL_1_IMAGES,
@@ -12,32 +12,14 @@ export default function RenuHousePage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          <Image
-            src={HERO_IMAGE}
-            alt="RENU-House exterior"
-            fill
-            className="hero-full-bg"
-            style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.6 }}
-            priority
-          />
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">RENU-House</h1>
-            <p className="project-hero-lead">
-              A positive net energy home guided by four overarching principles: Renewable, Economical, Nourishing, and Universal.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-completed">Completed 2023</span>
-              <span className="project-stat">Net-Positive Energy</span>
-              <span className="project-stat">ADA Accessible</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="RENU-House"
+        lead="A positive net energy home guided by four overarching principles: Renewable, Economical, Nourishing, and Universal."
+        imageSrc={HERO_IMAGE}
+        imageAlt="RENU-House exterior"
+        status={{ label: "Completed 2023", variant: "completed" }}
+        stats={["Net-Positive Energy", "ADA Accessible"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">

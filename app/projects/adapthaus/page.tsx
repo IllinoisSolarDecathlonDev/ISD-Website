@@ -1,35 +1,17 @@
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
 
 export default function AdapthausPage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          {/* Using the known image for ADAPTHAUS as the hero background */}
-          <Image
-            src="/images/homes/adapthaus.jpg"
-            alt="ADAPTHAUS Exterior"
-            fill
-            className="hero-full-bg"
-            style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.6 }}
-          />
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">ADAPTHAUS</h1>
-            <p className="project-hero-lead">
-              Our 2021 Solar Decathlon entry. A modular, high-performance home designed for flexibility, allowing expansion to accommodate changing household sizes over time.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-completed">Completed 2021</span>
-              <span className="project-stat">Modular Design</span>
-              <span className="project-stat">7.6 kW PV Array</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="ADAPTHAUS"
+        lead="Our 2021 Solar Decathlon entry. A modular, high-performance home designed for flexibility, allowing expansion to accommodate changing household sizes over time."
+        imageSrc="/images/homes/adapthaus.jpg"
+        imageAlt="ADAPTHAUS exterior"
+        status={{ label: "Completed 2021", variant: "completed" }}
+        stats={["Modular Design", "7.6 kW PV Array"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">

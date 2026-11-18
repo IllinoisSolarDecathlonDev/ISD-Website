@@ -1,41 +1,24 @@
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
+import { ProjectVideo } from "@/components/ProjectVideo";
 
 export default function IdealsPage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          <div className="project-hero-image-wrapper">
-            <Image
-              src="/images/homes/idealsoutside.png"
-              alt="IDEALS Hero Render"
-              className="project-hero-image"
-              fill
-              sizes="(max-width: 800px) 100vw, 1400px"
-              priority
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-            />
-          </div>
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">IDEALS</h1>
-            <p className="project-hero-lead">
-              Our vision for the future of education in Chicago. An ultra-sustainable, net-positive K-8 school model designed to provide environmental and social justice for underserved communities.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-in-progress">Proposed Design</span>
-              <span className="project-stat">Net-Positive Energy</span>
-              <span className="project-stat">Microgrid & AI</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="IDEALS"
+        lead="Our vision for the future of education in Chicago. An ultra-sustainable, net-positive K-8 school model designed to provide environmental and social justice for underserved communities."
+        imageSrc="/images/homes/idealsoutside.png"
+        imageAlt="IDEALS school render"
+        status={{ label: "Proposed Design", variant: "in-progress" }}
+        stats={["Net-Positive Energy", "Microgrid & AI"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">
+        {/* Project Video */}
+        <ProjectVideo youtubeId="8sKk7Z28SLo" title="IDEALS Design Challenge 2024 Submissions" />
+
         {/* Social & Environmental Justice */}
         <section className="project-glass-section">
           <div className="project-glass-card project-glass-card-large">

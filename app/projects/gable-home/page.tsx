@@ -1,35 +1,17 @@
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
 
 export default function GableHomePage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          {/* Using the known image for the Gable Home as the hero background */}
-          <Image
-            src="/images/homes/gable-home.jpg"
-            alt="Gable Home Exterior"
-            fill
-            className="hero-full-bg"
-            style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.6 }}
-          />
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">Gable Home</h1>
-            <p className="project-hero-lead">
-              Our 2009 Solar Decathlon entry. Inspired by the traditional gable-roofed farmhouses and barns characteristic of the Midwest, exploring how familiar architectural forms could be paired with advanced building science.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-completed">Completed 2009</span>
-              <span className="project-stat">9.1 kW PV Array</span>
-              <span className="project-stat">90% Lower Energy</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="Gable Home"
+        lead="Our 2009 Solar Decathlon entry. Inspired by the traditional gable-roofed farmhouses and barns characteristic of the Midwest, exploring how familiar architectural forms could be paired with advanced building science."
+        imageSrc="/images/homes/gable-home.jpg"
+        imageAlt="Gable Home exterior"
+        status={{ label: "Completed 2009", variant: "completed" }}
+        stats={["9.1 kW PV Array", "90% Lower Energy"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">

@@ -1,15 +1,50 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
 
 // TODO: swap these in for your real photos once you upload them.
 // Just drop the files into /public/images/projects/beacon-house/
 // and update the src + caption below. Order = carousel order.
 const GALLERY_IMAGES = [
   {
-    src: "/images/projects/beacon-house/main.jpg",
-    alt: "BEACON Home event photo",
+    src: "/images/homes/beacon-house.jpg",
+    alt: "Completed BEACON Home exterior in Rantoul, Illinois",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/vision-carousel/beacon-team.jpg",
+    alt: "ISD team and partners in front of the BEACON Home sign and the finished house",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-solar-roof.jpg",
+    alt: "Solar panels on the BEACON Home's black metal roof",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-family-welcome.jpg",
+    alt: "ISD team member welcoming a family into the BEACON Home",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-kitchen-tour.jpg",
+    alt: "Students touring the BEACON Home kitchen",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-heat-pump-tour.jpg",
+    alt: "Team members by the BEACON Home's heat pump and electrical equipment",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/beacon-sign-in.jpg",
+    alt: "Visitor signing in at the BEACON Home event",
+    caption: "BEACON Home",
+  },
+  {
+    src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20821.jpg",
+    alt: "BEACON Home team in hard hats in front of the project sign",
     caption: "BEACON Home",
   },
   {
@@ -39,16 +74,6 @@ const GALLERY_IMAGES = [
   },
   {
     src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20805.jpg",
-    alt: "BEACON Home event photo",
-    caption: "BEACON Home",
-  },
-  {
-    src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20813.jpg",
-    alt: "BEACON Home event photo",
-    caption: "BEACON Home",
-  },
-  {
-    src: "/images/projects/beacon-house/ISD%20Beacon%20Home%20Event%20-%20821.jpg",
     alt: "BEACON Home event photo",
     caption: "BEACON Home",
   },
@@ -211,35 +236,14 @@ export default function BeaconHousePage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          <div className="project-hero-image-wrapper">
-            <Image
-              src="/images/homes/beacon.png"
-              alt="BEACON Home Hero Render"
-              className="project-hero-image"
-              fill
-              sizes="(max-width: 800px) 100vw, 1400px"
-              priority
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-            />
-          </div>
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">BEACON Home</h1>
-            <p className="project-hero-lead">
-              Building Energy-Efficient Affordable Community-Oriented Neighborhoods. A completed initiative bringing direct community implementation to Rantoul, Illinois.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-completed">Completed 2026</span>
-              <span className="project-stat">1,700+ sq ft</span>
-              <span className="project-stat">All-Electric</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="BEACON Home"
+        lead="Building Energy-Efficient Affordable Community-Oriented Neighborhoods. A completed initiative bringing direct community implementation to Rantoul, Illinois."
+        imageSrc="/images/homes/beacon-house.jpg"
+        imageAlt="Completed BEACON Home exterior in Rantoul, Illinois"
+        status={{ label: "Completed 2026", variant: "completed" }}
+        stats={["1,700+ sq ft", "All-Electric"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">

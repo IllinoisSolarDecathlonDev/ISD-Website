@@ -1,35 +1,18 @@
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
 
 export default function ReHomePage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          {/* Using the known image for the Re_Home as the hero background */}
-          <Image
-            src="/images/homes/re-home.jpg"
-            alt="Re_Home Exterior"
-            fill
-            className="hero-full-bg"
-            style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.6 }}
-          />
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">Re_Home</h1>
-            <p className="project-hero-lead">
-              Our 2011 Solar Decathlon entry. A rapidly deployable, disaster-responsive modular housing prototype designed for the Midwest.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-completed">Completed 2011</span>
-              <span className="project-stat">Rapid Deployment</span>
-              <span className="project-stat">7.7 kW PV Array</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="Re_Home"
+        lead="Our 2011 Solar Decathlon entry. A rapidly deployable, disaster-responsive modular housing prototype designed for the Midwest."
+        imageSrc="/images/vision-carousel/recarous.png"
+        imageAlt="Visitors touring the Re_Home exhibit and its solar-panel roof"
+        imagePosition="40% center"
+        status={{ label: "Completed 2011", variant: "completed" }}
+        stats={["Rapid Deployment", "7.7 kW PV Array"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">
