@@ -4746,6 +4746,108 @@ body.navbar-animated .app-main > .hero-full:first-child {
   background-color: var(--accent-orange);
 }
 
+/* Split hero (components/ProjectHero.tsx): text left, undimmed photo right */
+.project-split-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: var(--surface-alt);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.project-split-hero-media {
+  position: relative;
+  order: -1;
+  aspect-ratio: 4 / 3;
+  background: var(--border-subtle);
+}
+
+.project-split-hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1.5rem 3rem;
+  animation: projectSplitHeroIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes projectSplitHeroIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-split-hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--text-primary);
+  margin: 0 0 1.25rem 0;
+}
+
+.project-split-hero-lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0 0 2rem 0;
+  max-width: 34rem;
+}
+
+.project-split-hero-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-strong);
+}
+
+.project-split-hero-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+.project-split-hero-stat::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-orange);
+}
+
+@media (min-width: 900px) {
+  .project-split-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    min-height: clamp(520px, 78vh, 780px);
+  }
+
+  .project-split-hero-media {
+    order: 0;
+    aspect-ratio: auto;
+  }
+
+  .project-split-hero-text {
+    /* Left edge lines up with the content column below (.project-futuristic-main) */
+    padding: 4rem 3rem 4rem max(1.5rem, calc((100vw - 1120px) / 2 + 1.5rem));
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-split-hero-text {
+    padding-left: max(4.5rem, calc((100vw - 1120px) / 2 + 4.5rem));
+  }
+}
+
 /* Main Content area */
 .project-futuristic-main {
   max-width: 1120px;

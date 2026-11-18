@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
 
 // TODO: swap these in for your real photos once you upload them.
 // Just drop the files into /public/images/projects/beacon-house/
@@ -211,35 +211,14 @@ export default function BeaconHousePage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          <div className="project-hero-image-wrapper">
-            <Image
-              src="/images/homes/beacon.png"
-              alt="BEACON Home Hero Render"
-              className="project-hero-image"
-              fill
-              sizes="(max-width: 800px) 100vw, 1400px"
-              priority
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-            />
-          </div>
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">BEACON Home</h1>
-            <p className="project-hero-lead">
-              Building Energy-Efficient Affordable Community-Oriented Neighborhoods. A completed initiative bringing direct community implementation to Rantoul, Illinois.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-completed">Completed 2026</span>
-              <span className="project-stat">1,700+ sq ft</span>
-              <span className="project-stat">All-Electric</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="BEACON Home"
+        lead="Building Energy-Efficient Affordable Community-Oriented Neighborhoods. A completed initiative bringing direct community implementation to Rantoul, Illinois."
+        imageSrc="/images/homes/beacon.png"
+        imageAlt="BEACON Home exterior render"
+        status={{ label: "Completed 2026", variant: "completed" }}
+        stats={["1,700+ sq ft", "All-Electric"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">

@@ -1,38 +1,17 @@
-import Image from "next/image";
+import { ProjectHero } from "@/components/ProjectHero";
 
 export default function ElevateChicagoPage() {
   return (
     <div className="project-futuristic-page">
       {/* Hero Section */}
-      <section className="project-hero">
-        <div className="project-hero-bg">
-          <div className="project-hero-image-wrapper">
-            <Image
-              src="/images/homes/elevate.png"
-              alt="Elevate Chicago Hero Render"
-              className="project-hero-image"
-              fill
-              sizes="(max-width: 800px) 100vw, 1400px"
-              priority
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-            />
-          </div>
-        </div>
-        <div className="project-hero-overlay">
-          <div className="project-hero-content">
-            <div className="project-hero-eyebrow">Projects</div>
-            <h1 className="project-hero-title">Elevate Chicago</h1>
-            <p className="project-hero-lead">
-              A high-performance, mixed-use, mid-rise concept serving as a catalyst for community development in the heart of Downtown Chicago.
-            </p>
-            <div className="project-hero-meta">
-              <span className="project-status-badge project-status-badge-in-progress">Design Study</span>
-              <span className="project-stat">90,000 sq ft</span>
-              <span className="project-stat">Net-Zero</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHero
+        title="Elevate Chicago"
+        lead="A high-performance, mixed-use, mid-rise concept serving as a catalyst for community development in the heart of Downtown Chicago."
+        imageSrc="/images/homes/elevate.png"
+        imageAlt="Elevate Chicago render"
+        status={{ label: "Design Study", variant: "in-progress" }}
+        stats={["90,000 sq ft", "Net-Zero"]}
+      />
 
       {/* Main Content */}
       <div className="project-futuristic-main">
